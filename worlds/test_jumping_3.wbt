@@ -109,6 +109,46 @@ Transform {
                   translationStep 0.001
                   rotationStep 0.017453293
                 }
+                DEF P1B73 Solid {
+                  translation 0.744065 0.600065 0.244000
+                  children [
+                    Solid {
+                      translation 0.1235 0.15 0.1245
+                      children [
+                        Shape {
+                          appearance RedBricks {
+                          }
+                          geometry Box {
+                            size 0.247 0.3 0.249
+                          }
+                        }
+                      ]
+                      name ""
+                    }
+                  ]
+                  name "P1B73"
+                  boundingObject Group {
+                    children [
+                      Transform {
+                        translation 0.1235 0.15 0.1245
+                        children [
+                          Box {
+                            size 0.247 0.3 0.249
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                  physics Physics {
+                    density -1
+                    mass 15.7
+                    centerOfMass [
+                      0.13 0.15 0.1245
+                    ]
+                  }
+                  translationStep 0.001
+                  rotationStep 0.017453293
+                }
               ]
             }
           ]
