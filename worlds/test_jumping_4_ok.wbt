@@ -1,0 +1,149 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/RedBricks.proto"
+
+WorldInfo {
+  basicTimeStep 8
+  FPS 15
+}
+DEF VP Viewpoint {
+  orientation -0.27992550327572246 -0.7310033292403435 0.6223149084309063 5.179943122114939
+  position -0.24602770320014572 -1.8342796898877813 1.3398795826152956
+}
+Transform {
+  rotation 0.1080254194083753 -0.9941480721776628 -0.00034546646894150206 0.00643364899203119
+  children [
+    RectangleArena {
+      contactMaterial "ground"
+      floorSize 15 15
+      floorAppearance Parquetry {
+        type "dark strip"
+      }
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+Transform {
+  rotation 0.1080254194083753 -0.9941480721776628 -0.00034546646894150206 0.00643364899203119
+  children [
+    DEF P1TRANS Transform {
+      children [
+        DEF P1TRANS_INNER Transform {
+          translation 1.258792 -1.589811 -0.009837
+          rotation 0.001118849292783794 -0.003095482350322965 -0.9999945830679678 3.125809766248804
+          children [
+            DEF P1 Solid {
+              translation 0.103 0.004 0
+              rotation 0 1 0 0
+              children [
+                Transform {
+                  translation 0.4 0.6 0.072
+                  children [
+                    WoodenBox {
+                      translation 0 0 0
+                      size 1 1.2 0.144
+                    }
+                  ]
+                }
+              ]
+              name "P1"
+              boundingObject Transform {
+                translation 0.4 0.6 0.084
+                children [
+                  Box {
+                    size 1.1 1.32 0.12
+                  }
+                ]
+              }
+            }
+            DEF P1B77 Solid {
+              translation 0.744066 0.902066 0.244
+              children [
+                Solid {
+                  translation 0.1235 0.15 0.1245
+                  children [
+                    Shape {
+                      appearance RedBricks {
+                      }
+                      geometry Box {
+                        size 0.247 0.3 0.249
+                      }
+                    }
+                  ]
+                  name ""
+                }
+              ]
+              name "P1B77"
+              boundingObject Group {
+                children [
+                  Transform {
+                    translation 0.1235 0.15 0.1245
+                    children [
+                      Box {
+                        size 0.247 0.3 0.249
+                      }
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 15.7
+                centerOfMass [
+                  0.13 0.15 0.1245
+                ]
+              }
+              translationStep 0.001
+              rotationStep 0.017453293
+            }
+            DEF P1B73 Solid {
+              translation 0.744065 0.600065 0.244
+              children [
+                Solid {
+                  translation 0.1235 0.15 0.1245
+                  children [
+                    Shape {
+                      appearance RedBricks {
+                      }
+                      geometry Box {
+                        size 0.247 0.3 0.249
+                      }
+                    }
+                  ]
+                  name ""
+                }
+              ]
+              name "P1B73"
+              boundingObject Group {
+                children [
+                  Transform {
+                    translation 0.1235 0.15 0.1245
+                    children [
+                      Box {
+                        size 0.247 0.3 0.249
+                      }
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 15.7
+                centerOfMass [
+                  0.13 0.15 0.1245
+                ]
+              }
+              translationStep 0.001
+              rotationStep 0.017453293
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
